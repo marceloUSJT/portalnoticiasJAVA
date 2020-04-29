@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastre sua noticia</title>
+		<style>
+			body {
+				background-color: #e5e5e5;
+			}
+			#container {
+				background-color: #FFF;
+				margin: 0 auto;
+				width: 800px;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+			h1 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1>REAL NEWS</h1>
+			<h2>Cadastre sua noticia</h2>
+			<form action="CadastrarNoticia.do" method="POST">
+				<label>
+					Titulo: <input type="text" name="titulo" placeholder="Insira o titulo"><br><br>
+				</label>
+				<label>
+					Descrição: <textarea name="descricao" placeholder="Insira a descrição da noticia"></textarea><br><br>
+				</label>
+				<label>
+					Conteúdo: <textarea name="texto" placeholder="Insira o texto da notícia"></textarea><br><br>
+				</label>
+				<input type="submit" value="Cadastrar">
+			</form>
+			<hr>
+			<p><a href="Home.do">Clique aqui</a> para voltar à pagina inicial</p> 
+		</div>
+	</body>
+</html>
